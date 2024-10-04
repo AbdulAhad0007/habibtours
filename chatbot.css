@@ -1,0 +1,141 @@
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc107;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffc107 !important;
+}
+body {
+  background: linear-gradient(135deg, #8acaff, #ee9b64, #9bb6fd);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.chatbot-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.chat-body {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 15px;
+}
+
+.chat-message {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.bot-message {
+  align-items: flex-start;
+}
+
+.user-message {
+  justify-content: flex-end;
+}
+
+.bot-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+#user-input {
+  flex: 1;
+  margin-right: 10px;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  justify-content: space-between;
+}
+.footer-content {
+  flex: 1 1 100%;
+  padding: 10px;
+  text-align: center;
+}
+.contact-section {
+  flex: 1;
+  padding: 20px;
+}
+.contact-section h3 {
+  margin-top: 0;
+}
+.contact-section p {
+  margin: 10px 0;
+}
+.social-icons img {
+  width: 30px;
+  margin: 0 5px;
+  transition: transform 0.3s;
+}
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+.map {
+  flex: 1;
+  padding: 20px;
+}
+.map iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+@media (min-width: 768px) {
+  .footer-content {
+    flex: 1 1 auto;
+  }
+  .contact-section,
+  .map {
+    flex: 1;
+    text-align: left;
+  }
+  .footer {
+    flex-wrap: nowrap;
+  }
+}
