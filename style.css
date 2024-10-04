@@ -27,7 +27,7 @@ body {
 /* Navbar Styling */
 .navbar {
   background-color: #212529;
-  padding: 1rem 2rem;
+  padding: 0.5rem;
   transition: background-color 0.3s ease;
 }
 
